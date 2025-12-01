@@ -1,6 +1,6 @@
 vim.g.mapleader = " "
 
-local function setup_lazy()	
+local function setup_lazy()
 	local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 	if not vim.loop.fs_stat(lazypath) then
 		vim.fn.system({
@@ -23,7 +23,7 @@ require("lazy").setup({
 		{ import = "core.themes.plugins" },
 		--   { import = "dotnet.plugins" },
 	},
-	install = { colorscheme = { "habamax" } },
+	install = { colorscheme = { "gruvbox-material" } },
 	checker = { enabled = true }, -- Автопроверка обновлений
 	-- Другие настройки...
 })
