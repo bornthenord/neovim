@@ -20,7 +20,7 @@ setup_lazy()
 require("lazy").setup({
 	spec = {
 		{ import = "core.plugins" },
-		{ import = "core.themes.plugins" },
+		{ import = "themes.plugins" },
 		--   { import = "dotnet.plugins" },
 	},
 	install = { colorscheme = { "gruvbox-material" } },
