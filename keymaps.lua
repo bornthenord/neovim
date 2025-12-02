@@ -12,6 +12,6 @@ vim.keymap.set("n", "fg", telescope.live_grep, { desc = "[f]ind [g]rep" })
 -- buffer
 vim.keymap.set("n", "<Tab>", ":bnext<CR>", { desc = "[b]uffer [n]ext" })
 vim.keymap.set("n", "<S-Tab>", ":bprevious<CR>", { desc = "[b]uffer [p]rev" })
+vim.keymap.set("n", "<Esc>", ":bd<CR>", { desc = "[b]uffer [d]elete" })
 vim.keymap.set("n", "bc", ":bufdo bd<CR>", { desc = "[b]uffers [c]lose" })
 vim.keymap.set("n", "bw", ":w<CR>", { desc = "[s]uffer [w]rite" })
-vim.keymap.set("n", "bd", ":bd<CR>", { desc = "[b]uffer [d]elete" })
