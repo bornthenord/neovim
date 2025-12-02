@@ -21,7 +21,8 @@ require("lazy").setup({
 	spec = {
 		{ import = "core.plugins" },
 		{ import = "ui.plugins" },
-		--   { import = "dotnet.plugins" },
+		{ import = "dev.plugins" },
+		{ import = "dev.dotnet.plugins" },
 	},
 	install = { colorscheme = { "gruvbox-material" } },
 	checker = { enabled = true }, -- Автопроверка обновлений

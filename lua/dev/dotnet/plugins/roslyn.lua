@@ -1,0 +1,14 @@
+return {
+	"seblyng/roslyn.nvim",
+	ft = "cs",
+	opts = {
+		settings = {
+			["csharp|inlay_hints"] = {
+				csharp_enable_inlay_hints_for_implicit_object_creation = true,
+			},
+			["csharp|code_lens"] = {
+				dotnet_enable_references_code_lens = true,
+			},
+		},
+	},
+}
