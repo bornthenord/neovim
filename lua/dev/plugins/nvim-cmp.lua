@@ -26,10 +26,9 @@ return {
 				["<CR>"] = cmp.mapping.confirm({ select = true }),
 			}),
 			sources = cmp.config.sources({
-				{ name = "nvim_lsp" }, -- Самый важный источник для C#
+				{ name = "nvim_lsp" },
 				{ name = "luasnip" },
 				{ name = "path" },
-			}, {
 				{ name = "buffer" },
 			}),
 		})
