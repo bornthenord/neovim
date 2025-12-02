@@ -1,4 +1,3 @@
--- Клавиша-префикс для .NET команд
 local toggleterm = require("toggleterm")
 local prefix = "<leader>p"
 
