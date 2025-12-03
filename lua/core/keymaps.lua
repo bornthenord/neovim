@@ -18,7 +18,7 @@ vim.keymap.set("n", "<S-q>", ":bd!<CR>", { desc = "force buffer close" })
 vim.keymap.set("n", "<A-q>", ":bufdo bd<CR>", { desc = "all buffers close" })
 
 -- terminal
-vim.keymap.set("t", "<Esc><Esc>", "<C-\\><C-N>")
+vim.keymap.set("t", "<Esc>", "<C-\\><C-N>")
 vim.keymap.set({ "t", "n" }, "<C-h>", "<C-\\><C-n><C-w>h", {})
 vim.keymap.set({ "t", "n" }, "<C-j>", "<C-\\><C-n><C-w>j", {})
 vim.keymap.set({ "t", "n" }, "<C-k>", "<C-\\><C-n><C-w>k", {})
