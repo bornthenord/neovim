@@ -1,4 +1,5 @@
 vim.g.mapleader = " "
+vim.opt.clipboard = "unnamedplus"
 
 local function setup_lazy()
     local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
