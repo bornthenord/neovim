@@ -1,31 +1,7 @@
 vim.g.mapleader = " "
 vim.opt.clipboard = "unnamedplus"
 
-local function setup_lazy()
-    local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
-    if not vim.loop.fs_stat(lazypath) then
-        vim.fn.system({
-            "git",
-            "clone",
-            "--filter=blob:none",
-            "https://github.com/folke/lazy.nvim.git",
-            "--branch=stable",
-            lazypath,
-        })
-    end
-    vim.opt.rtp:prepend(lazypath)
-end
+local plugin_paths = { "core.plugins", "ui.plugins", "dev.plugins", "dev.dotnet.plugins" }
+local lazy = require("core.lazy")
 
-setup_lazy()
-
-require("lazy").setup({
-    spec = {
-        { import = "core.plugins" },
-        { import = "ui.plugins" },
-        { import = "dev.plugins" },
-        { import = "dev.dotnet.plugins" },
-    },
-    install = { colorscheme = { "gruvbox-material" } },
-    checker = { enabled = true }, -- Автопроверка обновлений
-    -- Другие настройки...
-})
+lazy.init(plugin_paths)
