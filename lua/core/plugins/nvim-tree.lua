@@ -17,6 +17,7 @@ return {
 
             -- Unbind a default keymap (e.g., <c-k>)
             vim.keymap.del("n", "<c-k>", { buffer = bufnr })
+            vim.keymap.del("n", "f", { buffer = bufnr })
 
             -- Set a new keymap (e.g., use 'g' to open a file instead of 'o')
             vim.keymap.set("n", "h", api.node.navigate.parent_close, { buffer = bufnr, desc = "Close file" })
