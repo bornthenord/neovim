@@ -1,5 +1,6 @@
--- Последовательность важна
+vim.g.mapleader = " "
+vim.opt.clipboard = "unnamedplus"
+
 require("core")
-require("core.keymaps")
 require("ui")
 require("dev")
