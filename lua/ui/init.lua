@@ -3,4 +3,4 @@ vim.opt.termguicolors = true -- Включение true-цветов в терм
 vim.opt.cursorline = true
 vim.opt.colorcolumn = "100"
 
-vim.cmd.colorscheme("gruvbox-material")
+vim.cmd.colorscheme("ayu")
