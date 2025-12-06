@@ -9,11 +9,11 @@ end, { desc = "prev error" })
 
 vim.keymap.set("n", "<leader>wn", function()
     vim.diagnostic.goto_next({ severity = vim.diagnostic.severity.WARNING })
-end, { desc = "next error" })
+end, { desc = "next warning" })
 
 vim.keymap.set("n", "<leader>wp", function()
     vim.diagnostic.goto_prev({ severity = vim.diagnostic.severity.WARNING })
-end, { desc = "prev error" })
+end, { desc = "prev warning" })
 
 -- quickfix
 vim.keymap.set("n", "<leader>qf", vim.diagnostic.setqflist, { buffer = bufnr, desc = "Diagnostics to quickfix" })
@@ -31,8 +31,8 @@ vim.keymap.set("n", "<leader>rn", vim.lsp.buf.rename, { buffer = bufnr, desc = "
 -- test
 vim.keymap.set("n", "tt", function()
     require("neotest").summary.toggle()
-end, { desc = "Test project" })
+end, { desc = "Test toggle" })
 
 vim.keymap.set("n", "tr", function()
     require("neotest").run.run()
-end, { desc = "prev error" })
+end, { desc = "Run the closest test from the cursor" })
